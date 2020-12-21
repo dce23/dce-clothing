@@ -38,7 +38,8 @@ class SignUp extends React.Component {
       await createUserProfileDocument(user, { displayName });
 
       //This will clear out the form
-      this.state({
+
+      this.setState({
         displayName: "",
         email: "",
         password: "",
